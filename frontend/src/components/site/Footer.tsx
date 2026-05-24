@@ -81,7 +81,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-cream/80">
               <li className="flex gap-3"><Phone className="h-4 w-4 mt-0.5 text-primary"/>+91 9167005491</li>
               <li className="flex gap-3"><Mail className="h-4 w-4 mt-0.5 text-primary"/>parikshit@allpakpackaging.com</li>
-              <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 text-primary"/>Vapi</li>
+              <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 text-primary"/>Industrial plot 69, Damanganga industrial estate, Beside Jecor lights, Karvad road, Vapi</li>
             </ul>
             <div className="mt-6 flex gap-3">
               {[Linkedin, Instagram, Facebook].map((Icon, i) => (

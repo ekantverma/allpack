@@ -11,7 +11,7 @@ export const Route = createFileRoute("/_site/infrastructure")({
   head: () => ({
     meta: [
       { title: "Infrastructure - Allpak Packaging" },
-      { name: "description", content: "30+ advanced machines, dedicated cold-chain facilities and ISO-certified quality labs across three plants." },
+      { name: "description", content: "30+ advanced machines, dedicated cold-chain facilities and ISO-certified quality labs across On plants." },
       { property: "og:title", content: "Infrastructure - Allpak Packaging" },
       { property: "og:description", content: "Inside our auto-corrugation, semi-auto, printing and finishing capabilities." },
     ],
@@ -54,7 +54,7 @@ function InfraPage() {
     <>
       <PageHero
         eyebrow="Infrastructure"
-        title={<>30+ machines. <span className="italic font-serif text-accent">Three plants</span>. One standard.</>}
+        title={<>30+ machines. <span className="italic font-serif text-accent">One plant</span>. One standard.</>}
         subtitle="Purpose-built units for auto-corrugation, semi-auto production, printing and cold-chain compatible packaging."
       />
 
