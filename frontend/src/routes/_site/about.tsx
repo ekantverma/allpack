@@ -114,11 +114,15 @@ function AboutPage() {
                 t: "Next generation",
                 d: "Vikkas & Parikshit Ganeriwal lead a generational transition.",
               },
-              {
-                y: "2023",
-                t: "Automation",
-                d: "Auto-board line commissioned -1500+ tonnes monthly capacity unlocked.",
-              },
+              // {
+              //   y: "2023",
+              //   t: "Automation",
+              //   d: "Auto-board line commissioned -1500+ tonnes monthly capacity unlocked.",
+              // },
+              { y : "2026",
+                t : "Expansion",
+                d : "Manufacturing unit expanded with enhanced production infrastructure amd increased operational capacity to support growing demand across industries."
+              }
             ].map((e, i) => (
               <div
                 key={i}

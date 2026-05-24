@@ -87,8 +87,8 @@ function HomePage() {
       <Testimonials />
       <WhoWeAre />
       <Capabilities />
-      <FluteTypes />
-      <OurStory />
+      {/* <FluteTypes />
+      <OurStory /> */}
       {/* <ProductionProcess /> */}
       <ProductsPreview />
       <ContactCTA />
