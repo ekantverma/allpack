@@ -26,6 +26,15 @@ import storyImg from "@/assets/story-boxes.jpg";
 import infraAuto from "@/assets/infra-auto.jpg";
 import infraPrint from "@/assets/infra-printing.jpg";
 import qualityImg from "@/assets/quality-lab.jpg";
+import boxes3PlyImg from "@/assets/products/3-5-7-9-ply.jpg";
+import corrugatedPadsAndRollsImg from "@/assets/products/corrugatedpadsandrolls.jpg";
+import corrugatedRollsImg from "@/assets/products/corrugatedrolls.jpg";
+import eFluteImg from "@/assets/products/eflute.jpg";
+import mailerBoxImg from "@/assets/products/mailerbox.jpg";
+import masterCartonImg from "@/assets/products/mastercartoon.jpg";
+import monoCartonImg from "@/assets/products/Mono Cartoon box.jpg";
+import printedCorrugatedImg from "@/assets/products/printed corrugated box.jpg";
+import selfLockBoxesImg from "@/assets/products/selflockboxes.jpg";
 
 export const Route = createFileRoute("/_site/")({
   head: () => ({
@@ -200,7 +209,7 @@ function Hero() {
 function ClientsSection() {
   useReveal();
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeader
           eyebrow="Our Clients"
@@ -222,7 +231,7 @@ function ClientsSection() {
 
 function WhoWeAre() {
   return (
-    <section className="py-24 lg:py-32 bg-cream">
+    <section className="py-16 lg:py-20 bg-cream">
       <div className="mx-auto max-w-7xl px-5 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-5 reveal">
           <span className="text-xs uppercase tracking-[0.25em] font-semibold text-primary">
@@ -280,7 +289,7 @@ function WhoWeAre() {
 
 function OurStory() {
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-6 reveal overflow-hidden rounded-3xl group">
           <img
@@ -325,7 +334,7 @@ function OurStory() {
 
 function StatsSection() {
   return (
-    <section className="relative py-24 lg:py-32 overflow-hidden">
+    <section className="relative py-24 lg:py-20 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-ink" />
       <div className="absolute inset-0 grain opacity-30" />
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
@@ -379,7 +388,7 @@ function Capabilities() {
     { icon: Truck, t: "Export", d: "Long-haul export grade" },
   ];
   return (
-    <section className="py-24 lg:py-32 bg-cream">
+    <section className="py-16 lg:py-20 bg-cream">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeader
           eyebrow="Capabilities"
@@ -454,7 +463,7 @@ function FluteTypes() {
     },
   ];
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeader
           eyebrow="Flute Types"
@@ -506,7 +515,7 @@ function ProductionProcess() {
     { t: "Dispatch", d: "On-time delivery" },
   ];
   return (
-    <section className="py-24 lg:py-32 bg-cream">
+    <section className="py-16 lg:py-20 bg-cream">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeader
           eyebrow="Production Process"
@@ -541,54 +550,143 @@ function ProductionProcess() {
 
 function ProductsPreview() {
   const list = [
-    "3 Ply Corrugated Boxes",
-    "5 Ply Corrugated Boxes",
-    "7 Ply Corrugated Boxes",
-    "9 Ply Corrugated Boxes",
-    "Printed Corrugated Boxes",
-    "Mono Carton Boxes",
-    "Corrugated Rolls",
-    "Corrugated Pads & Sheets",
-    "E-Flute Boxes",
-    "Mailer Boxes",
-    "Self-Lock Boxes",
-    "Master Cartons",
+    {
+      title: "3 Ply Corrugated Boxes",
+      img: boxes3PlyImg,
+      desc: "Lightweight and durable packaging for daily shipping needs.",
+    },
+    {
+      title: "5 Ply Corrugated Boxes",
+      img: boxes3PlyImg,
+      desc: "Extra strength boxes for heavy-duty product protection.",
+    },
+    {
+      title: "7 Ply Corrugated Boxes",
+      img: boxes3PlyImg,
+      desc: "Industrial-grade packaging with superior durability.",
+    },
+    {
+      title: "9 Ply Corrugated Boxes",
+      img: boxes3PlyImg,
+      desc: "Maximum protection packaging for bulk and export goods.",
+    },
+    {
+      title: "Printed Corrugated Boxes",
+      img: printedCorrugatedImg,
+      desc: "Custom printed boxes for premium branding and packaging.",
+    },
+    {
+      title: "Mono Carton Boxes",
+      img: monoCartonImg,
+      desc: "Elegant retail packaging solutions with fine finishing.",
+    },
+    {
+      title: "Corrugated Rolls",
+      img: corrugatedRollsImg,
+      desc: "Flexible cushioning rolls for safe wrapping and protection.",
+    },
+    {
+      title: "Corrugated Pads & Sheets",
+      img: corrugatedPadsAndRollsImg,
+      desc: "Reliable sheets and pads for layered product safety.",
+    },
+    {
+      title: "E-Flute Boxes",
+      img: eFluteImg,
+      desc: "Compact and stylish boxes with smooth premium texture.",
+    },
+    {
+      title: "Mailer Boxes",
+      img: mailerBoxImg,
+      desc: "Modern e-commerce packaging designed for secure delivery.",
+    },
+    {
+      title: "Self-Lock Boxes",
+      img: selfLockBoxesImg,
+      desc: "Easy-to-assemble boxes with secure locking mechanism.",
+    },
+    {
+      title: "Master Cartons",
+      img: masterCartonImg,
+      desc: "Strong bulk packaging cartons for storage and transport.",
+    },
   ];
+
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeader
           eyebrow="Products"
           title={
             <>
-              A full <span className="text-gradient-brand">portfolio</span> of packaging.
+              A full{" "}
+              <span className="text-gradient-brand">
+                portfolio
+              </span>{" "}
+              of packaging.
             </>
           }
         />
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {list.map((p, i) => (
             <div
               key={i}
-              className="reveal group relative aspect-[4/5] rounded-2xl overflow-hidden border border-border bg-cream"
+              className="reveal group overflow-hidden rounded-3xl border border-border bg-white shadow-sm hover:shadow-2xl transition-all duration-500"
               style={{ transitionDelay: `${i * 40}ms` }}
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 transition-opacity duration-500 group-hover:opacity-0" />
-              <div className="absolute inset-0 bg-gradient-to-tr from-ink/90 via-ink/40 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-              <div className="absolute inset-0 flex flex-col justify-end p-5">
-                <Package className="h-8 w-8 text-primary/70 group-hover:text-cream transition-colors mb-3" />
-                <h4 className="font-display font-bold text-ink group-hover:text-cream text-lg leading-tight transition-colors">
-                  {p}
-                </h4>
+              {/* Image */}
+              <div className="relative overflow-hidden">
+                <img
+                  src={p.img}
+                  alt={p.title}
+                  className="h-[280px] w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+
+                {/* accent Hover Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+
+                {/* Floating Icon */}
+                {/* <div className="absolute top-4 right-4 flex items-center justify-center h-11 w-11 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
+                  <Package className="h-5 w-5 text-white" />
+                </div> */}
               </div>
+
+              {/* Content */}
+              <div className="relative bg-white p-5">
+                {/* Animated Accent Glow */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5" />
+
+                <div className="relative z-10">
+                  <div className="flex items-start justify-between gap-3">
+                    <h4 className="font-display font-bold text-slate-800 text-lg leading-tight group-hover:text-primary transition-colors duration-300">
+                      {p.title}
+                    </h4>
+
+                    <div className="flex items-center justify-center min-h-10 min-w-10 rounded-full bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white group-hover:rotate-45">
+                      <ArrowRight className="h-4 w-4" />
+                    </div>
+                  </div>
+
+                  <p className="mt-3 text-sm leading-relaxed text-slate-500">
+                    {p.desc}
+                  </p>
+                </div>
+              </div>
+
+              {/* Bottom Animated Line */}
+              <div className="h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full" />
             </div>
           ))}
         </div>
+
         <div className="mt-12 text-center">
           <Link
             to="/products"
             className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-4 font-semibold hover:-translate-y-0.5 transition-all shadow-soft hover:shadow-elegant"
           >
-            View All Products <ArrowRight className="h-4 w-4" />
+            View All Products
+            <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </div>
@@ -611,7 +709,7 @@ function IndustriesServed() {
     "Moving & Storage",
   ];
   return (
-    <section className="py-24 lg:py-32 bg-cream">
+    <section className="py-16 lg:py-20 bg-cream">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeader
           eyebrow="Industries Served"
@@ -658,7 +756,7 @@ function Testimonials() {
   ];
   const arr = [...t, ...t];
   return (
-    <section className="py-24 lg:py-32 overflow-hidden">
+    <section className="py-16 lg:py-20 overflow-hidden">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeader
           eyebrow="Testimonials"
@@ -691,7 +789,7 @@ function Testimonials() {
 
 function ContactCTA() {
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 lg:py-20">
       <div className="mx-auto max-w-5xl px-5 lg:px-8">
         <div className="reveal relative overflow-hidden rounded-3xl bg-ink p-12 lg:p-20 text-center">
           <div className="absolute inset-0 grain opacity-30" />

@@ -82,7 +82,7 @@ function InfraPage() {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32 bg-cream">
+      <section className="py-16 lg:py-32 bg-cream">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeader eyebrow="Other Machinery" title={<>Finishing & <span className="text-gradient-brand">specialty</span> equipment.</>} />
           <div className="mt-16 grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -105,7 +105,7 @@ function QualityControl() {
   const labs = ["Burst Testing Machine","Box Compression Tester","COBB Tester","Moisture Tester","GSM Testing","Vernier Caliper","Flute % Checker"];
   const certs = ["ISO 9001","ISO 14001","ISO 45001"];
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeader eyebrow="Quality Control" title={<>Quality, <span className="text-gradient-brand">measured</span> end-to-end.</>} />
         <div className="mt-16 grid lg:grid-cols-12 gap-10 items-center">

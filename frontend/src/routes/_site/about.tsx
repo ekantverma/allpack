@@ -38,7 +38,7 @@ function AboutPage() {
         subtitle="From a vision rooted in quality to serving India's most loved brands."
       />
 
-      <section className="py-24 lg:py-32">
+      <section className="py-20 lg:py-20">
         <div className="mx-auto max-w-7xl px-5 lg:px-8 grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-7 reveal">
             <h2 className="font-display font-bold text-4xl md:text-5xl text-ink leading-[1.1]">
@@ -80,7 +80,7 @@ function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-24 lg:py-32 bg-cream">
+      <section className="py-16 lg:py-32 bg-cream">
         <div className="mx-auto max-w-5xl px-5 lg:px-8">
           <SectionHeader
             eyebrow="Our Journey"
@@ -143,7 +143,7 @@ function AboutPage() {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-24 lg:py-32">
+      <section className="py-16 lg:py-32">
         <div className="mx-auto max-w-7xl px-5 lg:px-8 grid md:grid-cols-2 gap-6">
           {[
             {
@@ -173,7 +173,7 @@ function AboutPage() {
       </section>
 
       {/* Values */}
-<section className="py-24 lg:py-32 bg-[#f8f6f1]">
+<section className="py-16 lg:py-32 bg-[#f8f6f1]">
   <div className="mx-auto max-w-7xl px-5 lg:px-8">
     
     <SectionHeader
@@ -247,7 +247,7 @@ function AboutPage() {
 </section>
 
       {/* Leadership */}
-      <section className="py-24 lg:py-32">
+      <section className="py-16 lg:py-32">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <SectionHeader
             eyebrow="Leadership"

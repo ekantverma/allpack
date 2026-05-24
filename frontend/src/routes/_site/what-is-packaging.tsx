@@ -72,7 +72,7 @@ function Page() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 lg:py-32">
+      <section className="py-16 lg:py-32">
         <div className="mx-auto max-w-4xl px-5 lg:px-8">
           <SectionHeader eyebrow="FAQ" title={<>Common <span className="text-gradient-brand">questions</span>.</>} />
           <div className="mt-14 space-y-3">

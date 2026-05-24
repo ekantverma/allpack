@@ -3,6 +3,15 @@ import { useReveal } from "@/hooks/use-reveal";
 import { SectionHeader } from "@/components/site/SectionHeader";
 import { PageHero } from "./about";
 import { Package, Boxes, Layers, Mail, Lock, Truck } from "lucide-react";
+import boxes3PlyImg from "@/assets/products/3-5-7-9-ply.jpg";
+import corrugatedPadsAndRollsImg from "@/assets/products/corrugatedpadsandrolls.jpg";
+import corrugatedRollsImg from "@/assets/products/corrugatedrolls.jpg";
+import eFluteImg from "@/assets/products/eflute.jpg";
+import mailerBoxImg from "@/assets/products/mailerbox.jpg";
+import masterCartonImg from "@/assets/products/mastercartoon.jpg";
+import monoCartonImg from "@/assets/products/Mono Cartoon box.jpg";
+import printedCorrugatedImg from "@/assets/products/printed corrugated box.jpg";
+import selfLockBoxesImg from "@/assets/products/selflockboxes.jpg";
 
 export const Route = createFileRoute("/_site/products")({
   head: () => ({
@@ -19,18 +28,18 @@ export const Route = createFileRoute("/_site/products")({
 const categories = ["Food & Beverage", "Consumer Products", "Stationery", "Wellness", "Pharmaceuticals"];
 
 const products = [
-  { i: Boxes, t: "3 Ply Corrugated Boxes", d: "Lightweight inner packaging for low-stress loads." },
-  { i: Boxes, t: "5 Ply Corrugated Boxes", d: "Most versatile shipping carton -balanced strength." },
-  { i: Boxes, t: "7 Ply Corrugated Boxes", d: "Heavy-duty boxes for export and stacking." },
-  { i: Boxes, t: "9 Ply Corrugated Boxes", d: "Maximum-strength industrial shippers." },
-  { i: Package, t: "Printed Corrugated Boxes", d: "Brand-forward flexo & offset printing." },
-  { i: Package, t: "Mono Carton Boxes", d: "Premium retail-ready folding cartons." },
-  { i: Layers, t: "Corrugated Rolls", d: "Continuous corrugated wrap for protection." },
-  { i: Layers, t: "Corrugated Pads & Sheets", d: "Custom-cut interleaves and dividers." },
-  { i: Package, t: "E-Flute Boxes", d: "Fine flute for high-end retail packaging." },
-  { i: Mail, t: "Mailer Boxes", d: "Premium D2C unboxing experience." },
-  { i: Lock, t: "Self-Lock Boxes", d: "Tool-free assembly, secure closure." },
-  { i: Truck, t: "Master Cartons", d: "Bulk shippers built for the long haul." },
+  { i: Boxes, img: boxes3PlyImg, t: "3 Ply Corrugated Boxes", d: "Lightweight inner packaging for low-stress loads." },
+  { i: Boxes, img: boxes3PlyImg, t: "5 Ply Corrugated Boxes", d: "Most versatile shipping carton -balanced strength." },
+  { i: Boxes, img: boxes3PlyImg, t: "7 Ply Corrugated Boxes", d: "Heavy-duty boxes for export and stacking." },
+  { i: Boxes, img: boxes3PlyImg, t: "9 Ply Corrugated Boxes", d: "Maximum-strength industrial shippers." },
+  { i: Package, img: printedCorrugatedImg, t: "Printed Corrugated Boxes", d: "Brand-forward flexo & offset printing." },
+  { i: Package, img: monoCartonImg, t: "Mono Carton Boxes", d: "Premium retail-ready folding cartons." },
+  { i: Layers, img: corrugatedRollsImg, t: "Corrugated Rolls", d: "Continuous corrugated wrap for protection." },
+  { i: Layers, img: corrugatedPadsAndRollsImg, t: "Corrugated Pads & Sheets", d: "Custom-cut interleaves and dividers." },
+  { i: Package, img: eFluteImg, t: "E-Flute Boxes", d: "Fine flute for high-end retail packaging." },
+  { i: Mail, img: mailerBoxImg, t: "Mailer Boxes", d: "Premium D2C unboxing experience." },
+  { i: Lock, img: selfLockBoxesImg, t: "Self-Lock Boxes", d: "Tool-free assembly, secure closure." },
+  { i: Truck, img: masterCartonImg, t: "Master Cartons", d: "Bulk shippers built for the long haul." },
 ];
 
 function ProductsPage() {
@@ -43,7 +52,7 @@ function ProductsPage() {
         subtitle="Twelve core packaging types across five core industries -fully customisable to your spec."
       />
 
-      <section className="py-20">
+      <section className="py-16">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="flex flex-wrap gap-3 justify-center">
             {categories.map((c, i) => (
@@ -61,15 +70,31 @@ function ProductsPage() {
             {products.map((p, i) => (
               <div
                 key={p.t}
-                className="reveal group relative overflow-hidden rounded-3xl bg-card border border-border p-8 hover-lift"
+                className="reveal group relative overflow-hidden rounded-3xl bg-card border border-border p-0 shadow-[0_10px_45px_-24px_rgba(15,23,42,0.8)] transition-all duration-700 hover:border-transparent hover:shadow-2xl"
                 style={{ transitionDelay: `${i * 60}ms` }}
               >
                 <div className="absolute -right-12 -top-12 h-44 w-44 rounded-full bg-gradient-to-br from-primary/15 to-accent/10 transition-transform duration-700 group-hover:scale-150" />
-                <span className="relative grid place-items-center h-14 w-14 rounded-2xl bg-ink text-cream mb-6 transition-transform group-hover:rotate-6">
-                  <p.i className="h-6 w-6" />
-                </span>
-                <h3 className="relative font-display font-bold text-2xl text-ink">{p.t}</h3>
-                <p className="relative mt-3 text-muted-foreground">{p.d}</p>
+                <div className="relative overflow-hidden">
+                  <img
+                    src={p.img}
+                    alt={p.t}
+                    className="h-56 w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
+                </div>
+                <div className="relative p-8">
+                  <span className="relative inline-grid place-items-center h-14 w-14 rounded-2xl bg-ink text-cream mb-6 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105">
+                    <p.i className="h-6 w-6" />
+                  </span>
+                  <div className="space-y-3 transition-all duration-500 ease-out group-hover:-translate-y-1 group-hover:opacity-100 opacity-95">
+                    <h3 className="relative font-display font-bold text-2xl text-ink">{p.t}</h3>
+                    <p className="relative text-muted-foreground">{p.d}</p>
+                  </div>
+                  {/* <div className="mt-6 flex items-center gap-3 text-xs uppercase tracking-[0.24em] text-primary opacity-70 transition-opacity duration-500 group-hover:opacity-100">
+                    <span className="inline-flex h-2 w-2 rounded-full bg-primary animate-pulse" />
+                    explore packaging
+                  </div> */}
+                </div>
               </div>
             ))}
           </div>
@@ -116,7 +141,7 @@ function FluteTypes() {
   ];
 
   return (
-    <section className="py-24 lg:py-32">
+    <section className="py-16 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeader
           eyebrow="Flute Types"

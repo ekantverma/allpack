@@ -64,7 +64,7 @@ function Page() {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32 bg-cream">
+      <section className="py-16 lg:py-32 bg-cream">
         <div className="mx-auto max-w-5xl px-5 lg:px-8">
           <SectionHeader eyebrow="Open Positions" title={<>Roles we're <span className="text-gradient-brand">hiring</span> for.</>} />
           <div className="mt-14 space-y-3">
@@ -81,7 +81,7 @@ function Page() {
         </div>
       </section>
 
-      <section id="apply" className="py-24 lg:py-32">
+      <section id="apply" className="py-16 lg:py-32">
         <div className="mx-auto max-w-3xl px-5 lg:px-8">
           <SectionHeader eyebrow="Application" title={<>Apply <span className="text-gradient-brand">now</span>.</>} />
           <form onSubmit={(e) => { e.preventDefault(); setSent(true); }} className="reveal mt-14 rounded-3xl bg-card border border-border p-8 lg:p-10 space-y-6">
