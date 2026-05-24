@@ -49,12 +49,12 @@ function ProductsPage() {
       <PageHero
         eyebrow="Products"
         title={<>The right <span className="italic font-serif text-accent">box</span> for every brand.</>}
-        subtitle="Twelve core packaging types across five core industries -fully customisable to your spec."
+        subtitle="Twelve core packaging solutions built for industries like FMCG, Pharma, Food & Beverage, Electronics, E-commerce, Stationery, Retail, Cosmetics, Automotive, Textiles, Agriculture and Industrial Manufacturing - all fully customisable to your specifications."
       />
 
       <section className="py-16">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="flex flex-wrap gap-3 justify-center">
+          {/* <div className="flex flex-wrap gap-3 justify-center">
             {categories.map((c, i) => (
               <span
                 key={c}
@@ -64,7 +64,7 @@ function ProductsPage() {
                 {c}
               </span>
             ))}
-          </div>
+          </div> */}
 
           <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((p, i) => (

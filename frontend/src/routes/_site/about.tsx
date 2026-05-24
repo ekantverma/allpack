@@ -309,7 +309,7 @@ export function PageHero({
   subtitle: string;
 }) {
   return (
-    <section className="relative pt-40 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-b from-cream via-background to-background">
+    <section className="relative pt-40 pb-24 lg:pt-44 lg:pb-16 overflow-hidden bg-gradient-to-b from-cream via-background to-background">
       <div className="absolute top-40 right-10 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
       <div className="absolute bottom-0 left-10 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
       <div className="relative mx-auto max-w-5xl px-5 lg:px-8 text-center">

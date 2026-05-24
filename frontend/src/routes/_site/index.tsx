@@ -35,6 +35,26 @@ import masterCartonImg from "@/assets/products/mastercartoon.jpg";
 import monoCartonImg from "@/assets/products/Mono Cartoon box.jpg";
 import printedCorrugatedImg from "@/assets/products/printed corrugated box.jpg";
 import selfLockBoxesImg from "@/assets/products/selflockboxes.jpg";
+import logo1 from "@/assets/cutomers/logo-1.jpg";
+import logo2 from "@/assets/cutomers/logo-2.jpg";
+import logo3 from "@/assets/cutomers/logo-3.jpg";
+import logo4 from "@/assets/cutomers/logo-4.jpg";
+import logo5 from "@/assets/cutomers/logo-5.jpg";
+import logo6 from "@/assets/cutomers/logo-6.jpg";
+import logo7 from "@/assets/cutomers/logo-7.jpg";
+import logo8 from "@/assets/cutomers/logo-8.jpg";
+import logo9 from "@/assets/cutomers/logo-9.jpg";
+import logo10 from "@/assets/cutomers/logo-10.jpg";
+import logo11 from "@/assets/cutomers/logo-11.jpg";
+import logo12 from "@/assets/cutomers/logo-12.jpg";
+import logo13 from "@/assets/cutomers/logo-13.jpg";
+import logo14 from "@/assets/cutomers/logo-14.jpg";
+import logo15 from "@/assets/cutomers/logo-15.jpg";
+import logo16 from "@/assets/cutomers/logo-16.jpg";
+import logo17 from "@/assets/cutomers/logo-17.jpg";
+import logo18 from "@/assets/cutomers/logo-18.jpg";
+import logo19 from "@/assets/cutomers/logo-19.jpg";
+import logo20 from "@/assets/cutomers/logo-20.jpg";
 
 export const Route = createFileRoute("/_site/")({
   head: () => ({
@@ -56,30 +76,29 @@ export const Route = createFileRoute("/_site/")({
   component: HomePage,
 });
 
-const clients = [
-  "Amul",
-  "Reliance",
-  "Bluestar",
-  "Hindustan Pencils",
-  "Nataraj",
-  "Apsara",
-  "Epigamia",
-  "iD Fresh Food",
-  "Parle Agro",
-  "Open Secret",
-  "Unived",
+const clientLogos1 = [
+  { src: logo1, alt: "Client logo 1" },
+  { src: logo2, alt: "Client logo 2" },
+  { src: logo3, alt: "Client logo 3" },
+  { src: logo4, alt: "Client logo 4" },
+  { src: logo5, alt: "Client logo 5" },
+  { src: logo6, alt: "Client logo 6" },
+  { src: logo7, alt: "Client logo 7" },
+  { src: logo8, alt: "Client logo 8" },
+  { src: logo9, alt: "Client logo 9" },
+  { src: logo10, alt: "Client logo 10" },
 ];
-const clients2 = [
-  "Nutrova",
-  "Flair",
-  "Selvel",
-  "Rai Rayon",
-  "Sarla",
-  "SiN Denim",
-  "Samsonite",
-  "Joyo Plastics",
-  "Baskin Robbins",
-  "Brooklyn Creamery",
+const clientLogos2 = [
+  { src: logo11, alt: "Client logo 11" },
+  { src: logo12, alt: "Client logo 12" },
+  { src: logo13, alt: "Client logo 13" },
+  { src: logo14, alt: "Client logo 14" },
+  { src: logo15, alt: "Client logo 15" },
+  { src: logo16, alt: "Client logo 16" },
+  { src: logo17, alt: "Client logo 17" },
+  { src: logo18, alt: "Client logo 18" },
+  { src: logo19, alt: "Client logo 19" },
+  { src: logo20, alt: "Client logo 20" },
 ];
 
 function HomePage() {
@@ -222,8 +241,8 @@ function ClientsSection() {
         />
       </div>
       <div className="mt-16 space-y-5">
-        <LogoMarquee logos={clients} />
-        <LogoMarquee logos={clients2} reverse />
+        <LogoMarquee logos={clientLogos1} />
+        <LogoMarquee logos={clientLogos2} reverse />
       </div>
     </section>
   );
