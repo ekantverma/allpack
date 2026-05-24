@@ -29,13 +29,13 @@ const sections = [
   {
     img: infraAuto,
     title: "Semi-Auto Machinery",
-    tag: "Plant 01",
+    // tag: "Plant 01",
     items: ["2-ply single facer machine", "Thin blade rotary machine", "Flexible run sizes", "Rapid changeovers"],
   },
   {
     img: infraPrint,
     title: "Printing Machinery",
-    tag: "Plant 02",
+    // tag: "Plant 02",
     items: ["Rotary Slotter Printer", "Auto feeder & stacker", "Multi-colour flexo printing", "High-resolution output"],
   },
 ];
@@ -54,7 +54,7 @@ function InfraPage() {
     <>
       <PageHero
         eyebrow="Infrastructure"
-        title={<>30+ machines. <span className="italic font-serif text-accent">One plant</span>. One standard.</>}
+        title={<><span className="italic font-serif text-accent">30+ machines. </span><span className="text-black">One plant</span>. One standard.</>}
         subtitle="Purpose-built units for auto-corrugation, semi-auto production, printing and cold-chain compatible packaging."
       />
 

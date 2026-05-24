@@ -176,7 +176,7 @@ function Page() {
 
               {
                 i: MapPin,
-                t: "Plants",
+                t: "Plant",
                 v: "Industrial plot 69, Damanganga industrial estate, Beside Jecor lights, Karvad road, Vapi",
               },
 

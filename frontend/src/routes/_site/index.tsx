@@ -83,15 +83,14 @@ function HomePage() {
       <Hero />
       {/* <MovingTextSection /> */}
       <ClientsSection />
-      <WhoWeAre />
-      <OurStory />
       <StatsSection />
+      <Testimonials />
+      <WhoWeAre />
       <Capabilities />
       <FluteTypes />
-      <ProductionProcess />
+      <OurStory />
+      {/* <ProductionProcess /> */}
       <ProductsPreview />
-      <IndustriesServed />
-      <Testimonials />
       <ContactCTA />
     </>
   );
@@ -129,7 +128,7 @@ function Hero() {
               style={{ animation: "fade-up 1s 0.4s both" }}
             >
               Allpak Packaging delivers end-to-end packaging solutions for brands that demand
-              dependable packaging, consistent quality, and flexible production support.
+              dependable packaging, consistent quality and flexible production support.
               <span className="block mt-3 font-semibold text-black">
                 Every Box, Perfectly Made.
               </span>
@@ -176,8 +175,8 @@ function Hero() {
 
               {/* Floating Info Card */}
               <div className="absolute bottom-5 left-5 z-20 rounded-2xl bg-white/90 backdrop-blur-xl px-5 py-3 shadow-xl border border-black/5">
-                <p className="text-[11px] uppercase tracking-[0.2em] text-black">Premium Quality</p>
-                <h3 className="mt-1 text-lg font-bold text-accent">Corrugated Solutions</h3>
+                <p className="text-[11px] uppercase tracking-[0.2em] text-black">Strong Boxes</p>
+                <h3 className="mt-1 text-lg font-bold text-accent">Stronger Partnerships</h3>
               </div>
             </div>
           </div>
@@ -234,10 +233,9 @@ function WhoWeAre() {
             .
           </h2>
           <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-            Specialists in cold-chain, export and retail packaging -proven across frozen, chilled
-            and ambient logistics with three strategically located manufacturing plants.
+            Export and retail packaging specialists, manufactured with precision, delivered pan-India from our dedicated production facility.
           </p>
-          <div className="mt-8 grid grid-cols-3 gap-3">
+          {/* <div className="mt-8 grid grid-cols-3 gap-3">
             {[{ p: "Vapi" }].map((x, i) => (
               <div
                 key={i}
@@ -249,7 +247,7 @@ function WhoWeAre() {
                 <div className="mt-1 font-display font-bold text-ink">{x.p}</div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
         <div className="lg:col-span-7 grid sm:grid-cols-2 gap-5">
           {[
@@ -390,7 +388,7 @@ function Capabilities() {
               Engineered for every <span className="text-gradient-brand">use-case</span>.
             </>
           }
-          subtitle="From shelf-ready retail cartons to deep-frozen export shippers -three production lines, one quality standard."
+          subtitle="One facility. Full visibility. Zero compromises on quality."
         />
         <div className="mt-16 grid md:grid-cols-3 gap-6">
           {items.map((c, i) => (

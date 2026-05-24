@@ -75,6 +75,75 @@ function ProductsPage() {
           </div>
         </div>
       </section>
+
+      <FluteTypes />
     </>
+  );
+}
+
+function Row({ k, v }: { k: string; v: string }) {
+  return (
+    <div className="grid gap-2">
+      <dt className="text-sm font-semibold text-ink">{k}</dt>
+      <dd className="text-sm text-muted-foreground">{v}</dd>
+    </div>
+  );
+}
+
+function FluteTypes() {
+  const flutes = [
+    {
+      l: "B-Flute",
+      strength: "High puncture resistance",
+      usage: "Inner packaging, die-cut boxes",
+      temp: "Ambient + Chilled",
+      products: "Cans, beverages, hardware",
+    },
+    {
+      l: "C-Flute",
+      strength: "Most versatile, balanced",
+      usage: "Shipping cartons, master boxes",
+      temp: "All temperatures",
+      products: "Most retail goods, glassware",
+    },
+    {
+      l: "E-Flute",
+      strength: "Fine, smooth printing surface",
+      usage: "Mono cartons, retail boxes",
+      temp: "Ambient",
+      products: "Cosmetics, electronics, gifting",
+    },
+  ];
+
+  return (
+    <section className="py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+        <SectionHeader
+          eyebrow="Flute Types"
+          title={
+            <>
+              The right <span className="text-gradient-brand">structure</span> for every product.
+            </>
+          }
+        />
+        <div className="mt-16 grid md:grid-cols-3 gap-6">
+          {flutes.map((f, i) => (
+            <div
+              key={i}
+              className="reveal rounded-3xl bg-card border border-border p-8 group hover-lift"
+              style={{ transitionDelay: `${i * 100}ms` }}
+            >
+              <div className="font-display font-bold text-5xl text-gradient-brand">{f.l}</div>
+              <div className="mt-6 space-y-4 text-sm">
+                <Row k="Strength" v={f.strength} />
+                <Row k="Usage" v={f.usage} />
+                <Row k="Temperature" v={f.temp} />
+                <Row k="Best for" v={f.products} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

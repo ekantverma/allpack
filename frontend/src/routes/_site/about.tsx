@@ -35,7 +35,7 @@ function AboutPage() {
             generations.
           </>
         }
-        subtitle="From a vision rooted in quality to a multi-plant operation serving India's most loved brands."
+        subtitle="From a vision rooted in quality to serving India's most loved brands."
       />
 
       <section className="py-24 lg:py-32">
