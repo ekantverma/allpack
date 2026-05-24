@@ -54,7 +54,7 @@ function InfraPage() {
     <>
       <PageHero
         eyebrow="Infrastructure"
-        title={<><span className="italic font-serif text-accent">30+ machines. </span><span className="text-black">One plant</span>. One standard.</>}
+        title={<><span className="italic font-serif text-accent">30+ machines </span><span className="text-black">powering speed, scale and consistency</span></>}
         subtitle="Purpose-built units for auto-corrugation, semi-auto production, printing and cold-chain compatible packaging."
       />
 

@@ -320,7 +320,7 @@ export function PageHero({
           {eyebrow}
         </span>
         <h1
-          className="mt-6 font-display font-bold text-5xl md:text-7xl lg:text-8xl leading-[1.02] text-ink"
+          className="mt-6 font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.02] text-ink"
           style={{ animation: "fade-up 0.8s 0.15s both" }}
         >
           {title}

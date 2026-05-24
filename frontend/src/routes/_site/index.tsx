@@ -785,7 +785,7 @@ function Testimonials() {
           eyebrow="Testimonials"
           title={
             <>
-              What partners <span className="text-gradient-brand">say</span> about us.
+              What customers <span className="text-gradient-brand">say</span> about us.
             </>
           }
         />
