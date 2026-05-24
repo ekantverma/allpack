@@ -604,31 +604,31 @@ function ProductsPreview() {
       img: corrugatedRollsImg,
       desc: "Flexible cushioning rolls for safe wrapping and protection.",
     },
-    {
-      title: "Corrugated Pads & Sheets",
-      img: corrugatedPadsAndRollsImg,
-      desc: "Reliable sheets and pads for layered product safety.",
-    },
-    {
-      title: "E-Flute Boxes",
-      img: eFluteImg,
-      desc: "Compact and stylish boxes with smooth premium texture.",
-    },
-    {
-      title: "Mailer Boxes",
-      img: mailerBoxImg,
-      desc: "Modern e-commerce packaging designed for secure delivery.",
-    },
-    {
-      title: "Self-Lock Boxes",
-      img: selfLockBoxesImg,
-      desc: "Easy-to-assemble boxes with secure locking mechanism.",
-    },
-    {
-      title: "Master Cartons",
-      img: masterCartonImg,
-      desc: "Strong bulk packaging cartons for storage and transport.",
-    },
+    // {
+    //   title: "Corrugated Pads & Sheets",
+    //   img: corrugatedPadsAndRollsImg,
+    //   desc: "Reliable sheets and pads for layered product safety.",
+    // },
+    // {
+    //   title: "E-Flute Boxes",
+    //   img: eFluteImg,
+    //   desc: "Compact and stylish boxes with smooth premium texture.",
+    // },
+    // {
+    //   title: "Mailer Boxes",
+    //   img: mailerBoxImg,
+    //   desc: "Modern e-commerce packaging designed for secure delivery.",
+    // },
+    // {
+    //   title: "Self-Lock Boxes",
+    //   img: selfLockBoxesImg,
+    //   desc: "Easy-to-assemble boxes with secure locking mechanism.",
+    // },
+    // {
+    //   title: "Master Cartons",
+    //   img: masterCartonImg,
+    //   desc: "Strong bulk packaging cartons for storage and transport.",
+    // },
   ];
 
   return (
@@ -757,21 +757,25 @@ function IndustriesServed() {
 function Testimonials() {
   const t = [
     {
-      q: "Allpak's packaging held up perfectly through our entire cold-chain -from plant to retail. A true partner.",
-      a: "Supply Chain Head, Leading Dairy Brand",
+      q: "We work across so many categories, and Allpak just gets it. Whatever the requirement be it format, quantity, timeline they figure it out without making it our problem.",
+      a: "Amit Ji, Reliance Industries Limited",
     },
     {
-      q: "Consistency, quality and timelines. Three things Allpak never misses, and the reason we've worked with them for years.",
-      a: "Operations Director, FMCG",
+      q: "We've found Allpak to be a vendor that doesn't cut corners for quality checks, material specs, delivery timelines. Everything is taken seriously. ",
+      a: "Sumesh Singh, Samsonite",
     },
     {
-      q: "Their team understands export packaging at a level few do. Our overseas customers receive product in pristine condition.",
-      a: "Founder, D2C Wellness Brand",
+      q: "Allpak has helped us deliver that premium feel consistently. It genuinely lifts the whole product experience.",
+      a: "Procurement Head, Nutrova",
     },
     {
-      q: "From frozen desserts to fragile retail products, they engineer the box for the journey -not just the spec sheet.",
-      a: "Plant Head, Frozen Foods",
+      q: "Their team understands export packaging at a level few do. Our customers receive product in pristine condition.",
+      a: "Kunal Sethi, House of Kachori",
     },
+    {
+      q: "Lead times are reliable and when we pushed for better pricing on higher volumes, they worked with us on it. Straightforward vendor to deal with. ",
+      a: "Harsha Shah, Ami Creation",
+    }
   ];
   const arr = [...t, ...t];
   return (
