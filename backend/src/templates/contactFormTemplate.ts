@@ -308,7 +308,7 @@ export const generateContactFormEmail = (data: ContactFormData): string => {
         
         <!-- Footer -->
         <div class="footer">
-          <div class="company-name">AllPak Packaging</div>
+          <div class="company-name">Allpak Packaging</div>
           <p>Professional Packaging Solutions</p>
           <div class="divider"></div>
           <p>This email was sent to you because someone filled out your contact form.</p>

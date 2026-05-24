@@ -551,25 +551,25 @@ function ProductionProcess() {
 function ProductsPreview() {
   const list = [
     {
-      title: "3 Ply Corrugated Boxes",
+      title: "3/5/7/9 Ply Corrugated Boxes",
       img: boxes3PlyImg,
       desc: "Lightweight and durable packaging for daily shipping needs.",
     },
-    {
-      title: "5 Ply Corrugated Boxes",
-      img: boxes3PlyImg,
-      desc: "Extra strength boxes for heavy-duty product protection.",
-    },
-    {
-      title: "7 Ply Corrugated Boxes",
-      img: boxes3PlyImg,
-      desc: "Industrial-grade packaging with superior durability.",
-    },
-    {
-      title: "9 Ply Corrugated Boxes",
-      img: boxes3PlyImg,
-      desc: "Maximum protection packaging for bulk and export goods.",
-    },
+    // {
+    //   title: "5 Ply Corrugated Boxes",
+    //   img: boxes3PlyImg,
+    //   desc: "Extra strength boxes for heavy-duty product protection.",
+    // },
+    // {
+    //   title: "7 Ply Corrugated Boxes",
+    //   img: boxes3PlyImg,
+    //   desc: "Industrial-grade packaging with superior durability.",
+    // },
+    // {
+    //   title: "9 Ply Corrugated Boxes",
+    //   img: boxes3PlyImg,
+    //   desc: "Maximum protection packaging for bulk and export goods.",
+    // },
     {
       title: "Printed Corrugated Boxes",
       img: printedCorrugatedImg,
@@ -791,7 +791,7 @@ function ContactCTA() {
   return (
     <section className="py-16 lg:py-20">
       <div className="mx-auto max-w-5xl px-5 lg:px-8">
-        <div className="reveal relative overflow-hidden rounded-3xl bg-ink p-12 lg:p-20 text-center">
+        <div className="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary to-ink p-12 lg:p-20 text-center">
           <div className="absolute inset-0 grain opacity-30" />
           <div className="absolute -top-32 -right-32 h-80 w-80 rounded-full bg-primary/30 blur-3xl" />
           <div className="absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-accent/20 blur-3xl" />

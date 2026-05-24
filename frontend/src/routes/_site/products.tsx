@@ -28,10 +28,10 @@ export const Route = createFileRoute("/_site/products")({
 const categories = ["Food & Beverage", "Consumer Products", "Stationery", "Wellness", "Pharmaceuticals"];
 
 const products = [
-  { i: Boxes, img: boxes3PlyImg, t: "3 Ply Corrugated Boxes", d: "Lightweight inner packaging for low-stress loads." },
-  { i: Boxes, img: boxes3PlyImg, t: "5 Ply Corrugated Boxes", d: "Most versatile shipping carton -balanced strength." },
-  { i: Boxes, img: boxes3PlyImg, t: "7 Ply Corrugated Boxes", d: "Heavy-duty boxes for export and stacking." },
-  { i: Boxes, img: boxes3PlyImg, t: "9 Ply Corrugated Boxes", d: "Maximum-strength industrial shippers." },
+  { i: Boxes, img: boxes3PlyImg, t: "3/5/7/9 Ply Corrugated Boxes", d: "Lightweight inner packaging for low-stress loads." },
+  // { i: Boxes, img: boxes3PlyImg, t: "5 Ply Corrugated Boxes", d: "Most versatile shipping carton -balanced strength." },
+  // { i: Boxes, img: boxes3PlyImg, t: "7 Ply Corrugated Boxes", d: "Heavy-duty boxes for export and stacking." },
+  // { i: Boxes, img: boxes3PlyImg, t: "9 Ply Corrugated Boxes", d: "Maximum-strength industrial shippers." },
   { i: Package, img: printedCorrugatedImg, t: "Printed Corrugated Boxes", d: "Brand-forward flexo & offset printing." },
   { i: Package, img: monoCartonImg, t: "Mono Carton Boxes", d: "Premium retail-ready folding cartons." },
   { i: Layers, img: corrugatedRollsImg, t: "Corrugated Rolls", d: "Continuous corrugated wrap for protection." },
