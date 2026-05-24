@@ -40,6 +40,12 @@ app.use(
 | Health Check Route
 |--------------------------------------------------------------------------
 */
+app.get("/", (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Backend is running successfully",
+  });
+});
 
 app.get("/health", (req, res) => {
   res.status(200).json({
