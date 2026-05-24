@@ -813,13 +813,13 @@ function Testimonials() {
 function ContactCTA() {
   return (
     <section className="py-16 lg:py-20">
-      <div className="mx-auto max-w-5xl px-5 lg:px-8">
+      <div className="mx-auto max-w-[1100px] px-5 lg:px-8">
         <div className="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary/15 via-primary/10 to-ink/10 p-12 lg:p-20 text-center">
           <div className="absolute inset-0 grain opacity-20" />
           <div className="absolute -top-32 -right-32 h-80 w-80 rounded-full bg-primary/20 blur-3xl" />
           <div className="absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-accent/15 blur-3xl" />
           <div className="relative">
-            <h2 className="font-display font-bold text-4xl md:text-6xl text-black leading-[1.05]">
+            <h2 className="font-display font-bold text-4xl md:text-[75px] text-black leading-[1.05]">
               Let's build your <span className="italic font-serif text-accent">next box</span>.
             </h2>
             <p className="mt-6 max-w-xl mx-auto text-black/70 text-lg">
