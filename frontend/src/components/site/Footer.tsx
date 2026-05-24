@@ -84,11 +84,17 @@ export function Footer() {
               <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 text-primary"/>Industrial plot 69, Damanganga industrial estate, Beside Jecor lights, Karvad road, Vapi</li>
             </ul>
             <div className="mt-6 flex gap-3">
-              {[Linkedin, Instagram, Facebook].map((Icon, i) => (
+              {[
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/allpak-packaging/", label: "LinkedIn" },
+                { Icon: Instagram, href: "https://www.instagram.com/allpakpackaging/", label: "Instagram" },
+                { Icon: Facebook, href: "https://www.facebook.com/allpakpackaging/", label: "Facebook" },
+              ].map(({ Icon, href, label }, i) => (
                 <a
                   key={i}
-                  href="#"
-                  aria-label="social"
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label={label}
                   className="grid place-items-center h-10 w-10 rounded-full border border-white/15 transition-all hover:bg-primary hover:border-primary hover:-translate-y-0.5"
                 >
                   <Icon className="h-4 w-4" />
