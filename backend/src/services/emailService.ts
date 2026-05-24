@@ -139,16 +139,27 @@ export const emailService = {
       </html>
     `;
 
-    await this.sendEmail({
-      to: formData.email,
-      subject: '✅ We Received Your Contact Form - AllPak Packaging',
-      html: confirmationHtml,
-    });
+    let userEmailResult = null;
+    if (formData.email && formData.email !== adminEmail) {
+      userEmailResult = await this.sendEmail({
+        to: formData.email,
+        subject: '✅ We Received Your Contact Form - Allpak Packaging',
+        html: confirmationHtml,
+      });
+    } else {
+      console.warn(
+        'Skipping confirmation email because user email is missing or matches the admin email:',
+        formData.email
+      );
+    }
 
     return {
       success: true,
       adminMessageId: adminResult.messageId,
-      message: 'Contact form submitted successfully. Confirmation email sent to the user.',
+      userMessageId: userEmailResult?.messageId || null,
+      message: userEmailResult
+        ? 'Contact form submitted successfully. Confirmation email sent to the user.'
+        : 'Contact form submitted successfully. Confirmation email skipped because the user email matched the admin email or was missing.',
     };
   },
 };
