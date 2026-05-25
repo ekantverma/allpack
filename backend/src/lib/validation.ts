@@ -97,7 +97,7 @@ export const validateContactForm = (
       field: "packagingNeeds",
       message: "Packaging needs description is required",
     });
-  } else if (data.packagingNeeds.trim().length < 10) {
+  } else if (data.packagingNeeds.trim().length < 5) {
     errors.push({
       field: "packagingNeeds",
       message: "Please provide at least 10 characters describing your packaging needs",
