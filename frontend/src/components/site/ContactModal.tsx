@@ -155,9 +155,9 @@ function ContactModal({ open, onClose }: { open: boolean; onClose: () => void })
                 {/* <p className="text-sm uppercase tracking-[0.24em] text-muted-foreground">Quick quote form</p> */}
                 <h3 className="mt-3 text-2xl font-bold text-ink">Tell us about your packaging need</h3>
               </div>
-              <div className="hidden lg:block rounded-2xl bg-primary/10 px-4 py-2 text-xs uppercase tracking-[0.26em] text-primary">
+              {/* <div className="hidden lg:block rounded-2xl bg-primary/10 px-4 py-2 text-xs uppercase tracking-[0.26em] text-primary">
                 Response within 1 business day
-              </div>
+              </div> */}
             </div>
 
             <form onSubmit={handleSubmit} className="mt-8 space-y-6">
