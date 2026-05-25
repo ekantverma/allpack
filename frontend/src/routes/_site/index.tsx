@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { useReveal } from "@/hooks/use-reveal";
+import { useContactModal } from "@/components/site/ContactModal";
 import { SectionHeader } from "@/components/site/SectionHeader";
 import { Marquee } from "@/components/site/Marquee";
 import { LogoMarquee } from "@/components/site/LogoMarquee";
@@ -125,6 +126,8 @@ function HomePage() {
 }
 
 function Hero() {
+  const { openContactModal } = useContactModal();
+
   return (
     <section className="relative min-h-screen overflow-hidden flex items-center bg-gradient-to-br from-[#f8f5ef] via-[#f3ece2] to-[#faf7f2]">
       {/* Soft Background */}
@@ -174,12 +177,13 @@ function Hero() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
 
-              <Link
-                to="/contact"
+              <button
+                type="button"
+                onClick={openContactModal}
                 className="inline-flex items-center gap-2 rounded-full border border-black/15 px-6 py-3.5 text-sm font-semibold text-black transition-all hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-0.5"
               >
                 Get a Quote
-              </Link>
+              </button>
             </div>
           </div>
 

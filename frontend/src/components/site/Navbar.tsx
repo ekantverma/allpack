@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Package } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
+import { useContactModal } from "@/components/site/ContactModal";
 
 const links = [
   { to: "/", label: "Home" },
@@ -16,6 +17,7 @@ const links = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { openContactModal } = useContactModal();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -65,12 +67,13 @@ export function Navbar() {
           ))}
         </nav>
 
-        <Link
-          to="/contact"
-          className="hidden lg:inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-semibold shadow-soft transition-all hover:-translate-y-0.5 hover:shadow-elegant"
+        <button
+          type="button"
+          onClick={() => openContactModal()}
+          className="hidden lg:inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 text-sm font-semibold shadow-soft transition-all hover:-translate-y-0.5 hover:shadow-elegant cursor-pointer"
         >
           Get a Quote
-        </Link>
+        </button>
 
         <button
           aria-label="Toggle menu"
@@ -107,13 +110,16 @@ export function Navbar() {
               </Link>
             ))}
 
-            <Link
-              to="/contact"
-              onClick={() => setOpen(false)}
-              className="mt-3 text-center rounded-full bg-primary text-primary-foreground px-5 py-3 font-semibold"
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false);
+                openContactModal();
+              }}
+              className="mt-3 rounded-full bg-primary text-primary-foreground px-5 py-3 font-semibold"
             >
               Get a Quote
-            </Link>
+            </button>
           </nav>
         </div>
       </div>
